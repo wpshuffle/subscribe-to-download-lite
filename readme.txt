@@ -1,19 +1,20 @@
 === Subscribe to Download - An opt in to download plugin===
 Contributors: wpshuffle
 Donate link: http://wpshuffle.com/
-Tags: subscribe and download, subscribe to download, subscription plugin, subscribe, download after email, email and download, subscription form plugin, subcription form templates
+Tags: subscribe, subscription, subscription plugin, form, download, email, templates
 Requires at least: 4.9
 Tested up to: 5.2
 Requires PHP: 5.2.4
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Download after Subscription | Subscribe & Download | Popup Subscription Form
 
 == Description ==
+[Home](https://wpshuffle.com/) | [Demo](https://demo.wpshuffle.com/subscribe-to-download-lite/) | [Documentation](https://wpshuffle.com/wordpress-documentations/subscribe-to-download-lite/) | [Upgrade to PRO](https://wpshuffle.com/wordpress-plugins/subscribe-to-download/)
 
-As the name explains, this plugin makes it fast and easy to capture subscribers right from your WordPress site by simply providing them a freebies to download through email after successful subscription. If you don't have any freebies to offer then you can even use our plugin just as a subscription plugin too.
+As the name explains, <strong>Subscribe to Download Lite</strong> makes it fast and easy to capture subscribers right from your WordPress site by simply providing them a freebies to download through email after successful subscription. If you don't have any freebies to offer then you can even use our plugin just as a subscription plugin too.
 
 You can enable or disable <strong>each form component</strong>, choose a stunning layout from our <strong>5 beautifully pre designed templates</strong>, <strong>encrypt download link</strong> and <strong>track download status</strong>, <strong>export subscribers</strong> and what not. With this plugin you are just few seconds away from collecting the subscribers from your WordPress site because configuring and integrating a subscription form in any site is that easy with our plugin.
 
