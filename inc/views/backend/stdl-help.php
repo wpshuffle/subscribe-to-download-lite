@@ -15,6 +15,11 @@
     <div class="stdl-form-wrap stdl-form-add-block stdl-clearfix">
         <div class="stdl-block-wrap">
             <div class="stdl-content-block">
+                <h2><?php esc_html_e('Documentation', 'subscribe-to-download-lite'); ?></h2>
+                <p><?php esc_html_e('You can check our detailed documentation in the below link.', 'subscribe-to-download-lite'); ?></p>
+                <p><a href="https://wpshuffle.com/wordpress-documentations/subscribe-to-download-lite/" target="_blank">https://wpshuffle.com/wordpress-documentations/subscribe-to-download-lite/</a></p>
+            </div>
+            <div class="stdl-content-block">
                 <h2><?php esc_html_e('Developer Documentation', 'subscribe-to-download-lite'); ?></h2>
                 <p><?php esc_html_e('If you are developer and trying to add any functionality or customize our plugin through hooks then below are the list of actions and filters available in the plugin.', 'subscribe-to-download-lite'); ?></p>
             </div>
@@ -114,26 +119,6 @@ $csv_rows = apply_filters('stdl_csv_rows', $csv_rows);
  * @since 1.0.0
  */
  $download_path = apply_filters('stdl_download_path', $download_path, $encryption_key);
-                    </pre>
-                    <pre>
-/**
- * <?php esc_html_e('Filters post parameters being sent to Maichimp', 'subscribe-to-download-lite'); ?>
-                        *
- * @param array $post_parameters
- * @param array $form_data
- * @param array $form_details
- */
- $post_parameters = apply_filters('stdl_mc_post_parameters', $post_parameters, $form_data, $form_details);
-                    </pre>
-                    <pre>
-/**
- * <?php esc_html_e('Filters parameters being sent to Constant Contact', 'subscribe-to-download-lite'); ?>
-                        *
- * @param array $post_parameters
- * @param array $form_data
- * @param array $form_details
- */
- $post_parameters = apply_filters('stdl_cc_post_parameters', $post_parameters, $form_data, $form_details);
                     </pre>
                     <pre>
 /**
