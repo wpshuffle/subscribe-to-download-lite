@@ -64,7 +64,7 @@ defined('ABSPATH') or die('No script kiddies please!!');
                 <tr>
                     <th><?php esc_html_e('Subscriber Name', 'subscribe-to-download-lite'); ?></th>
                     <th><?php esc_html_e('Subscriber Email', 'subscribe-to-download-lite'); ?></th>
-                    <th><?php esc_html_e('Downaload Status', 'subscribe-to-download-lite'); ?></th>
+                    <th><?php esc_html_e('Download Status', 'subscribe-to-download-lite'); ?></th>
                     <th><?php esc_html_e('Action', 'subscribe-to-download-lite'); ?></th>
                 </tr>
             </tfoot>

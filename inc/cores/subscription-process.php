@@ -10,10 +10,13 @@ if ($this->ajax_nonce_verify()) {
      */
     do_action('stdl_before_form_process');
     $form_data = $_POST['form_data'];
+    $form_data = stripslashes_deep($form_data);
     parse_str($form_data, $form_data);
     $form_data = $this->sanitize_array($form_data);
     $form_alias = sanitize_text_field($_POST['form_alias']);
     $form_details = get_option('stdl_settings');
+    $subscriber_email = sanitize_email($form_data['stdl_email']);
+    $subscriber_name = (!empty($form_data['stdl_name'])) ? sanitize_text_field($form_data['stdl_name']) : '';
     if (empty($form_data['stdl_email']) || (!empty($form_details['form']['terms_agreement']['show']) && empty($form_data['stdl_terms_agreement'])) || (!empty($form_details['form']['name']['show']) && !empty($form_details['form']['name']['required']) && empty($form_data['stdl_name']))) {
         $response['status'] = 403;
         $response['message'] = esc_attr($form_details['general']['required_error_message']);
@@ -45,8 +48,8 @@ if ($this->ajax_nonce_verify()) {
                 if ($email_check) {
                     setcookie("stdl_encryption_key", $encryption_key, time() + 3600 * 24 * 365, '/');
                     global $wpdb;
-                    $wpdb->insert(STDL_SUBSCRIBERS_TABLE, array('subscriber_name' => $form_data['stdl_name'],
-                        'subscriber_email' => $form_data['stdl_email'],
+                    $wpdb->insert(STDL_SUBSCRIBERS_TABLE, array('subscriber_name' => $subscriber_name,
+                        'subscriber_email' => $subscriber_email,
                         'subscriber_form_alias' => $form_alias,
                         'subscriber_encryption_key' => $encryption_key), array('%s', '%s', '%s', '%s'));
                     $response['status'] = 200;

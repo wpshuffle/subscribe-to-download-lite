@@ -5,7 +5,7 @@ Tags: subscribe, subscription, subscription plugin, form, download, email
 Requires at least: 4.9
 Tested up to: 5.2
 Requires PHP: 5.2.4
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,7 +32,7 @@ You can enable or disable <strong>each form component</strong>, choose a stunnin
 * Customize Email message, From Name and From Email
 
 = Check Premium Features = 
-* Create Unlimited Form with different restirctions
+* Create Unlimited Form with different restrictions
 * 20 Pre Designed Subscription Form Templates
 * Show popup form with delay on individual page
 * Custom Form Styler Available
@@ -81,6 +81,11 @@ Our plugin do have the feature to encrypt the download link so that it will only
 9. Backend Email Settings
 
 == Changelog ==
+= 1.0.3 = 
+* Fixed bug for subscriber not being stored when name field was disabled
+* Fixed subscriber delete bug
+* Fixed a typo in the backend subscribers listing
+
 = 1.0.2 = 
 * Updated help section and removed unwanted files
 

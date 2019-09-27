@@ -227,7 +227,45 @@ jQuery(document).ready(function ($) {
 
     });
 
-    
+    /**
+     * Deletes subscriber
+     * 
+     * @since 1.0.0
+     */
+    /**
+     * Subscription Form Delete
+     * 
+     * @since 1.0.0
+     */
+    $('body').on('click', '.stdl-subscriber-delete', function () {
+        if (confirm(translation_strings.delete_subscriber_confirm)) {
+            var selector = $(this);
+            var subscriber_id = $(this).data('subscriber-id');
+            $.ajax({
+                type: 'post',
+                url: stdl_backend_obj.ajax_url,
+                data: {
+                    action: 'stdl_subscriber_delete_action',
+                    subscriber_id: subscriber_id,
+                    _wpnonce: stdl_backend_obj.ajax_nonce,
+                },
+                beforeSend: function (xhr) {
+                    stdl_generate_info(translation_strings.ajax_message, 'ajax');
+                },
+                success: function (res) {
+                    res = $.parseJSON(res);
+                    if (res.status == 200) {
+                        stdl_generate_info(res.message, 'info');
+                        selector.closest('tr').fadeOut(500, function () {
+                            $(this).remove();
+                        });
+                    } else {
+                        stdl_generate_info(res.message, 'error');
+                    }
+                }
+            });
+        }
+    });
 
     
     
