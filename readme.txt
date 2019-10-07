@@ -5,14 +5,14 @@ Tags: subscribe, subscription, subscription plugin, form, download, email
 Requires at least: 4.9
 Tested up to: 5.2
 Requires PHP: 5.2.4
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Download after Subscription | Subscribe & Download | Popup Subscription Form
 
 == Description ==
-[Home](https://wpshuffle.com/) | [Demo](https://demo.wpshuffle.com/subscribe-to-download-lite/) | [Documentation](https://wpshuffle.com/wordpress-documentations/subscribe-to-download-lite/) | [Upgrade to PRO](https://wpshuffle.com/wordpress-plugins/subscribe-to-download/)
+[Home](https://wpshuffle.com/) | [Demo](https://demo.wpshuffle.com/subscribe-to-download-lite/) | [Documentation](https://wpshuffle.com/wordpress-documentations/subscribe-to-download-lite/) | [Upgrade to PRO](https://1.envato.market/Q3KGo)
 
 As the name explains, <strong>Subscribe to Download Lite</strong> makes it fast and easy to capture subscribers right from your WordPress site by simply providing them a freebies to download through email after successful subscription. If you don't have any freebies to offer then you can even use our plugin just as a subscription plugin too.
 
@@ -40,11 +40,11 @@ You can enable or disable <strong>each form component</strong>, choose a stunnin
 * Track Download Status
 * And many more ...
 
-Check all premium features [here](https://codecanyon.net/item/subscribe-to-download-an-advanced-subscription-plugin-for-wordpress/24020447?ref=wpshuffle)
+Check all premium features [here](https://1.envato.market/Q3KGo)
 
 
 = Upgrade to PRO = 
-* To upgrade to pro, please go [here](https://codecanyon.net/item/subscribe-to-download-an-advanced-subscription-plugin-for-wordpress/24020447?ref=wpshuffle)    
+* To upgrade to pro, please go [here](https://1.envato.market/Q3KGo)    
 * To check demo, please go [here](http://demo.wpshuffle.com/subscribe-to-download)
 
 == Installation ==
@@ -81,6 +81,9 @@ Our plugin do have the feature to encrypt the download link so that it will only
 9. Backend Email Settings
 
 == Changelog ==
+= 1.0.4 = 
+* Updated upgrade link
+
 = 1.0.3 = 
 * Fixed bug for subscriber not being stored when name field was disabled
 * Fixed subscriber delete bug
