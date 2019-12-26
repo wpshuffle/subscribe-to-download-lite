@@ -5,7 +5,7 @@ defined('ABSPATH') or die('No script kiddies please!');
   Plugin Name: Subscribe To Download Lite
   Plugin URI:  https://wpshuffle.com/subscribe-to-download-lite
   Description: A plugin to collect email using an email subscribing form by providing the free downloadable items
-  Version:     1.0.7
+  Version:     1.0.8
   Author:      WP Shuffle
   Author URI:  http://wpshuffle.com
   Domain Path: /languages
@@ -49,8 +49,8 @@ if (!class_exists('STDL_Class')) {
         function includes() {
             include(STDL_PATH . 'inc/classes/class-stdl-library.php');
             include(STDL_PATH . 'inc/classes/class-stdl-init.php');
-            include(STDL_PATH . 'inc/classes/class-stdl-activation.php');
             if (is_admin()) {
+                include(STDL_PATH . 'inc/classes/class-stdl-activation.php');
                 include(STDL_PATH . 'inc/classes/class-stdl-admin.php');
             }
             include(STDL_PATH . 'inc/classes/class-stdl-enqueue.php');
