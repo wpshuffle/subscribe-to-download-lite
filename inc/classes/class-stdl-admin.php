@@ -27,7 +27,9 @@ if (!class_exists('STDL_Admin')) {
 
         function export_to_csv() {
             if (!empty($_GET['_wpnonce']) && wp_verify_nonce($_GET['_wpnonce'], 'stdl_export_csv_nonce')) {
-
+                $filename = "subscribers-list.csv";
+                header('Content-type: application/csv');
+                header('Content-Disposition: attachment; filename=' . $filename);
                 $csv_rows = $this->get_subscriber_csv_rows();
 
                 /**
@@ -43,9 +45,7 @@ if (!class_exists('STDL_Admin')) {
                 foreach ($csv_rows as $csv_row) {
                     fputcsv($csv_output, $csv_row);
                 }
-                $filename = "subscribers-list.csv";
-                header('Content-type: application/csv');
-                header('Content-Disposition: attachment; filename=' . $filename);
+
                 exit;
             } else {
                 $this->permission_denied();

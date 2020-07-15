@@ -5,7 +5,7 @@ Tags: subscribe, subscription, subscription plugin, form, download, email
 Requires at least: 4.9
 Tested up to: 5.4
 Requires PHP: 5.2.4
-Stable tag: 1.0.9
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -81,6 +81,10 @@ Our plugin do have the feature to encrypt the download link so that it will only
 9. Backend Email Settings
 
 == Changelog ==
+= 1.1.0 = 
+* Fixed subscribers CSV export
+* Added anchor link for download link
+
 = 1.0.9 = 
 * Checked WP Version 5.4 compatibility check
 

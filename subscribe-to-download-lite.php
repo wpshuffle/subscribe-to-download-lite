@@ -1,11 +1,11 @@
 <?php
 
-defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
+defined('ABSPATH') or die('No script kiddies please!');
 /*
   Plugin Name: Subscribe To Download Lite
   Plugin URI:  https://wpshuffle.com/subscribe-to-download-lite
   Description: A plugin to collect email using an email subscribing form by providing the free downloadable items
-  Version:     1.0.9
+  Version:     1.1.0
   Author:      WP Shuffle
   Author URI:  http://wpshuffle.com
   Domain Path: /languages
@@ -17,7 +17,7 @@ defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 /**
  * Plugin's main class
  */
-if ( !class_exists( 'STDL_Class' ) ) {
+if (!class_exists('STDL_Class')) {
 
     class STDL_Class {
 
@@ -32,15 +32,15 @@ if ( !class_exists( 'STDL_Class' ) ) {
         function define_constants() {
 
             global $wpdb;
-            defined( 'STDL_VERSION' ) or define( 'STDL_VERSION', '1.0.9' ); // Plugin's active version
-            defined( 'STDL_PATH' ) or define( 'STDL_PATH', plugin_dir_path( __FILE__ ) ); // plugin's absolute path
-            defined( 'STDL_URL' ) or define( 'STDL_URL', plugin_dir_url( __FILE__ ) ); // plugin's absolute URL
-            defined( 'STDL_IMG_DIR' ) or define( 'STDL_IMG_DIR', plugin_dir_url( __FILE__ ) . '/images' ); // plugin's image directory URL
-            defined( 'STDL_CSS_DIR' ) or define( 'STDL_CSS_DIR', plugin_dir_url( __FILE__ ) . '/css' ); // plugin's image directory URL
-            defined( 'STDL_JS_DIR' ) or define( 'STDL_JS_DIR', plugin_dir_url( __FILE__ ) . '/js' ); // plugin's image directory URL
-            defined( 'STDL_TD' ) or define( 'STDL_TD', 'subscribe-to-download-lite' ); //plugin's translation text domain
-            defined( 'STDL_SUBSCRIBERS_TABLE' ) or define( 'STDL_SUBSCRIBERS_TABLE', $wpdb->prefix . 'std_subscribers' ); //plugin's subscriber table
-            defined( 'STDL_TOTAL_TEMPLATES' ) or define( 'STDL_TOTAL_TEMPLATES', 5 ); //Total number of templates available
+            defined('STDL_VERSION') or define('STDL_VERSION', '1.1.0'); // Plugin's active version
+            defined('STDL_PATH') or define('STDL_PATH', plugin_dir_path(__FILE__)); // plugin's absolute path
+            defined('STDL_URL') or define('STDL_URL', plugin_dir_url(__FILE__)); // plugin's absolute URL
+            defined('STDL_IMG_DIR') or define('STDL_IMG_DIR', plugin_dir_url(__FILE__) . '/images'); // plugin's image directory URL
+            defined('STDL_CSS_DIR') or define('STDL_CSS_DIR', plugin_dir_url(__FILE__) . '/css'); // plugin's image directory URL
+            defined('STDL_JS_DIR') or define('STDL_JS_DIR', plugin_dir_url(__FILE__) . '/js'); // plugin's image directory URL
+            defined('STDL_TD') or define('STDL_TD', 'subscribe-to-download-lite'); //plugin's translation text domain
+            defined('STDL_SUBSCRIBERS_TABLE') or define('STDL_SUBSCRIBERS_TABLE', $wpdb->prefix . 'std_subscribers'); //plugin's subscriber table
+            defined('STDL_TOTAL_TEMPLATES') or define('STDL_TOTAL_TEMPLATES', 5); //Total number of templates available
         }
 
         /**
@@ -49,7 +49,7 @@ if ( !class_exists( 'STDL_Class' ) ) {
         function includes() {
             include(STDL_PATH . 'inc/classes/class-stdl-library.php');
             include(STDL_PATH . 'inc/classes/class-stdl-init.php');
-            if ( is_admin() ) {
+            if (is_admin()) {
                 include(STDL_PATH . 'inc/classes/class-stdl-activation.php');
                 include(STDL_PATH . 'inc/classes/class-stdl-admin.php');
             }

@@ -42,7 +42,7 @@ if ($this->ajax_nonce_verify()) {
                 $download_url = esc_url($form_details['general']['download_file']);
             }
             if (!empty($download_url)) {
-                $email_message = str_replace('#download_link', $download_url, $email_message);
+                $email_message = str_replace('#download_link', '<a href="' . $download_url . '">' . $download_url . '</a>', $email_message);
 
                 $email_check = wp_mail($form_data['stdl_email'], $subject, $email_message, $headers);
                 if ($email_check) {
@@ -74,7 +74,7 @@ if ($this->ajax_nonce_verify()) {
             }
             if (!empty($download_url)) {
 
-                $email_message = str_replace('#download_link', $download_url, $email_message);
+                $email_message = str_replace('#download_link', '<a href="' . $download_url . '">' . $download_url . '</a>', $email_message);
                 /**
                  * Filters email message
                  *
