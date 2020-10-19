@@ -108,10 +108,12 @@ ul.stdl-form-nav li a:focus {
 }
 .stdl-field input[type="text"] {
     width: 500px;
+    max-width: 100%;
 }
 .stdl-field textarea {
     width: 500px;
     height:100px;
+    max-width: 100%;
 }
 .stdl-component-head .dashicons {
     float: right;
