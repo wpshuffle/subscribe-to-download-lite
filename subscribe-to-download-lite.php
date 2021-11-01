@@ -5,7 +5,7 @@ defined('ABSPATH') or die('No script kiddies please!');
   Plugin Name: Subscribe To Download Lite
   Plugin URI:  https://wpshuffle.com/subscribe-to-download-lite
   Description: A plugin to collect email using an email subscribing form by providing the free downloadable items
-  Version:     1.1.5
+  Version:     1.1.6
   Author:      WP Shuffle
   Author URI:  http://wpshuffle.com
   Domain Path: /languages
@@ -32,7 +32,7 @@ if (!class_exists('STDL_Class')) {
         function define_constants() {
 
             global $wpdb;
-            defined('STDL_VERSION') or define('STDL_VERSION', '1.1.5'); // Plugin's active version
+            defined('STDL_VERSION') or define('STDL_VERSION', '1.1.6'); // Plugin's active version
             defined('STDL_PATH') or define('STDL_PATH', plugin_dir_path(__FILE__)); // plugin's absolute path
             defined('STDL_URL') or define('STDL_URL', plugin_dir_url(__FILE__)); // plugin's absolute URL
             defined('STDL_IMG_DIR') or define('STDL_IMG_DIR', plugin_dir_url(__FILE__) . '/images'); // plugin's image directory URL
@@ -61,7 +61,6 @@ if (!class_exists('STDL_Class')) {
             include(STDL_PATH . 'inc/classes/class-stdl-hooks.php');
             include(STDL_PATH . 'inc/classes/class-stdl-mobile-detect.php');
         }
-
     }
 
     $stdl_obj = new STDL_Class(); //initialization of plugin
