@@ -3,9 +3,9 @@ Contributors: wpshuffle
 Donate link: http://wpshuffle.com/
 Tags: subscribe, subscription, subscription plugin, form, download, email
 Requires at least: 5.0
-Tested up to: 5.8
+Tested up to: 5.9
 Requires PHP: 5.2.4
-Stable tag: 1.1.6
+Stable tag: 1.1.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -81,6 +81,9 @@ Our plugin do have the feature to encrypt the download link so that it will only
 9. Backend Email Settings
 
 == Changelog ==
+= 1.1.7 = 
+* Checked WP Version 5.8 compatibility
+
 = 1.1.6 = 
 * Fixed upgrdae to pro link
 
