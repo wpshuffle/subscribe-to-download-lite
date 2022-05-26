@@ -3,16 +3,17 @@ Contributors: wpshuffle
 Donate link: http://wpshuffle.com/
 Tags: subscribe, subscription, subscription plugin, form, download, email
 Requires at least: 5.0
-Tested up to: 5.9
+Tested up to: 6.0
 Requires PHP: 5.2.4
-Stable tag: 1.1.7
+Stable tag: 1.1.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Download after Subscription | Subscribe & Download | Popup Subscription Form
 
 == Description ==
-[Home](https://wpshuffle.com/) | [Demo](https://demo.wpshuffle.com/subscribe-to-download-lite/) | [Documentation](https://wpshuffle.com/wordpress-documentations/subscribe-to-download-lite/) | [Upgrade to PRO](https://1.envato.market/Q3KGo)
+[Home](https://wpshuffle.com/) | [Demo](https://demo.wpshuffle.com/subscribe-to-download-lite/) | [Documentation](https://wpshuffle.com/wordpress-documentations/subscribe-to-download-lite/) | [Upgrade to PRO](https://1.envato.market/Q3KGo) | [Compatible Themes](https://afthemes.com/products/)
+ 
 
 As the name explains, <strong>Subscribe to Download Lite</strong> makes it fast and easy to capture subscribers right from your WordPress site by simply providing them a freebies to download through email after successful subscription. If you don't have any freebies to offer then you can even use our plugin just as a subscription plugin too.
 
@@ -81,8 +82,11 @@ Our plugin do have the feature to encrypt the download link so that it will only
 9. Backend Email Settings
 
 == Changelog ==
+= 1.1.8 = 
+* Checked WP Version 6.0 compatibility
+
 = 1.1.7 = 
-* Checked WP Version 5.8 compatibility
+* Checked WP Version 5.9 compatibility
 
 = 1.1.6 = 
 * Fixed upgrdae to pro link
