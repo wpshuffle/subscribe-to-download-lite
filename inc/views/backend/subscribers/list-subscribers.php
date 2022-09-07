@@ -69,10 +69,7 @@ defined('ABSPATH') or die('No script kiddies please!!');
                 </tr>
             </tfoot>
         </table>
-        <div class="stdl-go-pro" style="margin-top: 15px;">
-            <img src="<?php echo STDL_URL . 'images/upgradeImg.png' ?>" />
-            <a href="#" class="stdl-button-orange">Upgrade now</a>
-        </div>
+        <?php include(STDL_PATH . 'inc/views/backend/upgrade.php'); ?>
     </div>
 
 </div>

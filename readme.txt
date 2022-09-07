@@ -5,7 +5,7 @@ Tags: subscribe, subscription, subscription plugin, form, download, email
 Requires at least: 5.0
 Tested up to: 6.0
 Requires PHP: 5.2.4
-Stable tag: 1.1.9
+Stable tag: 1.2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -48,6 +48,20 @@ Check all premium features [here](https://1.envato.market/Q3KGo)
 * To upgrade to pro, please go [here](https://1.envato.market/Q3KGo)    
 * To check demo, please go [here](http://demo.wpshuffle.com/subscribe-to-download)
 
+Check all compatible themes [here](https://afthemes.com/products/category/free/) 
+* [CoverNews](https://afthemes.com/products/covernews/)
+* [EnterNews](https://afthemes.com/products/enternews/)
+* [MoreNews](https://afthemes.com/products/morenews/)
+* [Newsphere](https://afthemes.com/products/newsphere/)
+* [DarkNews](https://afthemes.com/products/darknews/)
+* [Newsium](https://afthemes.com/products/newsium/)
+* [Newsever](https://afthemes.com/products/newsever/)
+* [Shopical](https://afthemes.com/products/shopical/)
+* [StoreCommerce](https://afthemes.com/products/storecommerce/)
+* [Storeship](https://afthemes.com/products/storeship/)
+* [Elegant Magazine](https://afthemes.com/products/elegant-magazine/)
+* [And More..](https://afthemes.com/products/category/free/)
+
 == Installation ==
 
 1. Upload the plugin files to the `/wp-content/plugins/subscribe-to-download-lite` directory, or install the plugin through the WordPress plugins screen directly.
@@ -82,6 +96,9 @@ Our plugin do have the feature to encrypt the download link so that it will only
 9. Backend Email Settings
 
 == Changelog ==
+= 1.2.0 = 
+* Added contact us section for support assistance
+
 = 1.1.8 = 
 * Checked WP Version 6.0 compatibility
 

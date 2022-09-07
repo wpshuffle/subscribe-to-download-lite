@@ -439,7 +439,7 @@ span.stdl-shortcode-preview {
     text-align: center;
     width: calc(25% - 20px);
     width: -webkit-calc(25% - 20px);
-    float:left;
+    float:right;
     margin-left: 20px;
     padding: 20px;
     background-color: white;
@@ -631,3 +631,86 @@ input.button-secondary.stdl-alias-force-edit {
        margin-top: 5px;
    }
 }
+
+
+.stdl-btn-margin {
+    margin-bottom: 10px;
+  }
+  .stdl-assistance {
+    margin-bottom: 20px;
+    text-align: center;
+    width: calc(25% - 20px);
+    width: -webkit-calc(25% - 20px);
+    flex: 1;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: white;
+    float: left;
+  }
+  
+  .stdl-assistance img{
+      max-width: 100%;
+  }
+  .stdl-assistance a:focus,
+  .stdl-go-pro a:focus,
+  a:focus {
+    color: #fff;
+    box-shadow: none;
+    outline: 0px solid transparent;
+  }
+  @media only screen and (max-width: 720px) {
+    .stdl-form-wrap.stdl-form-add-block.stdl-clearfix {
+        display: flex;
+        flex-direction: column;
+    }
+    .stdl-assistance {
+        margin-bottom: 10px;
+        text-align: center;
+        width: 100%;
+        margin-left: 5px;
+    }
+    .stdl-go-pro {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 5px;
+    }
+    .stdl-field {
+        display: inline-block;
+        width: 100%;
+    }
+    .stdl-settings-section-wrap {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .stdl-form-add-block form {
+        display: flex;
+        flex-direction: column;
+    }
+    ul.stdl-form-nav {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    ul.stdl-form-nav li a {
+        width: 91px;
+    }
+    .stdl-field input[type="text"] {
+        width: 300px;
+    }
+    
+    .stdl-header {
+        /* background: #2196f3; */
+        background: #df6767;
+        padding: 12px 15px 10px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .stdl-form-add-block form {
+        width: 100%;
+    }
+
+}
+ 
