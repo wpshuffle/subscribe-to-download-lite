@@ -9,7 +9,7 @@
                 <a href="https://www.facebook.com/wpshuffle/" target="_blank"><i class="dashicons dashicons-facebook-alt"></i></a>
                 <a href="https://twitter.com/wpshuffle/" target="_blank"><i class="dashicons dashicons-twitter"></i></a>
             </div>
-            <a href="<?php echo admin_url('admin.php?page=add-subscription-form'); ?>"><input type="button" class="stdl-button-white" value="<?php esc_html_e('Add New Form', 'subscribe-to-download-lite'); ?>"></a>
+            <a href="<?php echo STDL_UPGRADE_LINK; ?>" target="_blank"><input type="button" class="stdl-button-white" value="<?php esc_html_e('Upgrade to PRO', 'subscribe-to-download-lite'); ?>"></a>
         </div>
     </div>
     <div class="stdl-form-wrap stdl-form-add-block stdl-clearfix">
@@ -20,11 +20,16 @@
                 <p><a href="https://wpshuffle.com/wordpress-documentations/subscribe-to-download-lite/" target="_blank">https://wpshuffle.com/wordpress-documentations/subscribe-to-download-lite/</a></p>
             </div>
             <div class="stdl-content-block">
+                <h2><?php esc_html_e('For Support', 'subscribe-to-download-lite'); ?></h2>
+                <p><a href="https://wpshuffle.com/contact-us" target="_blank">https://wpshuffle.com/contact-us</a></p>
+            </div>
+            <div class="stdl-content-block">
                 <h2><?php esc_html_e('Developer Documentation', 'subscribe-to-download-lite'); ?></h2>
                 <p><?php esc_html_e('If you are developer and trying to add any functionality or customize our plugin through hooks then below are the list of actions and filters available in the plugin.', 'subscribe-to-download-lite'); ?></p>
-            </div>
 
-            <div class="stdl-content-block">
+
+
+
                 <h3><?php esc_html_e('Available Actions', 'subscribe-to-download-lite'); ?></h3>
                 <div class="stdl-hooks-wrap">
                     <pre>
@@ -94,9 +99,7 @@ do_action('stdl_before_download', $form_details);
 do_action('stdl_after_download', $form_details);
                     </pre>
                 </div>
-            </div>
 
-            <div class="stdl-content-block">
                 <h3><?php esc_html_e('Available Filters', 'subscribe-to-download-lite'); ?></h3>
                 <div class="stdl-hooks-wrap">
                     <pre>
@@ -135,7 +138,5 @@ $email_message = apply_filters('stdl_email_message', $email_message, $form_data)
 
             </div>
         </div>
-        <?php include(STDL_PATH . 'inc/views/backend/upgrade.php'); ?>
-
     </div>
 </div>

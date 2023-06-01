@@ -1,5 +1,5 @@
-<div class="stdl-settings-each-section" data-tab="email" style="display:none;">
-
+<div class="stdl-settings-each-section stdl-form-flx" data-tab="email" style="display:none;">
+<div class="stdl-form-left">
     <div class="stdl-field-wrap">
         <label><?php esc_html_e( 'Email Subject', 'subscribe-to-download-lite' ); ?></label>
         <div class="stdl-field">
@@ -28,4 +28,14 @@
             <p class="description"><?php esc_html_e( 'Please use #download_link which will be replaced with the download link in the email.', 'subscribe-to-download-lite' ); ?></p>
         </div>
     </div>
+              </div>
+    <div class="stdl-form-right">
+            <?php
+            /**
+             * Upgrade Field
+             */
+            include(STDL_PATH . 'inc/views/backend/upgrade.php');
+            ?>
+
+        </div>
 </div>

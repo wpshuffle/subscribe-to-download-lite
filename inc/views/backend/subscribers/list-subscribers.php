@@ -17,6 +17,7 @@ defined('ABSPATH') or die('No script kiddies please!!');
             $export_url = admin_url('admin-post.php?action=stdl_export_csv&_wpnonce=' . wp_create_nonce('stdl_export_csv_nonce'));
             ?>
             <a href="<?php echo esc_url($export_url); ?>"><input type="button" class="stdl-button-orange" value="<?php esc_html_e('Export to CSV', 'subscribe-to-download-lite'); ?>"></a>
+            <a href="<?php echo STDL_UPGRADE_LINK; ?>" target="_blank"><input type="button" class="stdl-button-white" value="<?php esc_html_e('Upgrade to PRO', 'subscribe-to-download-lite'); ?>"></a>
         </div>
     </div>
     <div class="stdl-form-wrap">
@@ -40,7 +41,7 @@ defined('ABSPATH') or die('No script kiddies please!!');
                 $subscriber_rows = $wpdb->get_results($subscriber_query);
                 if (!empty($subscriber_rows)) {
                     foreach ($subscriber_rows as $subscriber_row) {
-                        ?>
+                ?>
                         <tr>
                             <td><?php echo esc_attr($subscriber_row->subscriber_name); ?></td>
                             <td><?php echo esc_attr($subscriber_row->subscriber_email); ?></td>
@@ -49,14 +50,14 @@ defined('ABSPATH') or die('No script kiddies please!!');
                                 <a class="stdl-delete stdl-subscriber-delete" href="javascript:void(0)" data-subscriber-id="<?php echo intval($subscriber_row->subscriber_id); ?>" title="<?php esc_html_e('Delete Subscriber', 'subscribe-to-download-lite'); ?>"><?php esc_html_e('Delete', 'subscribe-to-download-lite'); ?></a>
                             </td>
                         </tr>
-                        <?php
+                    <?php
                     }
                 } else {
                     ?>
                     <tr>
                         <td colspan="5"><?php esc_html_e('No subscribers found.', 'subscribe-to-download-lite'); ?></td>
                     </tr>
-                    <?php
+                <?php
                 }
                 ?>
             </tbody>
@@ -69,7 +70,6 @@ defined('ABSPATH') or die('No script kiddies please!!');
                 </tr>
             </tfoot>
         </table>
-        <?php include(STDL_PATH . 'inc/views/backend/upgrade.php'); ?>
     </div>
 
 </div>

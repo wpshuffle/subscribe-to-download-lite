@@ -15,10 +15,11 @@ if (!class_exists('STDL_Admin')) {
 
         function add_stdl_menu() {
             add_menu_page(esc_html__('Subscribe to Download Lite', 'subscribe-to-download-lite'), esc_html__('Subscribe to Download Lite', 'subscribe-to-download-lite'), 'manage_options', 'stdl-settings', array($this, 'settings_page'), 'dashicons-download');
-            add_submenu_page('stdl-settings', esc_html__('Settings', 'subscribe-to-download-lite'), esc_html__('Settings', 'subscribe-to-download-lite'), 'manage_options', 'stdl-settings', array($this, 'settings_page'));
+            add_submenu_page('stdl-settings', esc_html__('All Forms', 'subscribe-to-download-lite'), esc_html__('All Forms', 'subscribe-to-download-lite'), 'manage_options', 'stdl-settings', array($this, 'settings_page'));
             add_submenu_page('stdl-settings', esc_html__('Subscribers', 'subscribe-to-download-lite'), esc_html__('Subscribers', 'subscribe-to-download-lite'), 'manage_options', 'stdl-subscribers', array($this, 'generate_subscribers_list'));
             add_submenu_page('stdl-settings', esc_html__('Help', 'subscribe-to-download-lite'), esc_html__('Help', 'subscribe-to-download-lite'), 'manage_options', 'stdl-help', array($this, 'render_help_page'));
             add_submenu_page('stdl-settings', esc_html__('About', 'subscribe-to-download-lite'), esc_html__('About', 'subscribe-to-download-lite'), 'manage_options', 'stdl-about', array($this, 'render_about_page'));
+            add_submenu_page('stdl-settings', esc_html__('Upgrade to PRO', 'subscribe-to-download-lite'), esc_html__('Upgrade to PRO', 'subscribe-to-download-lite'), 'manage_options', 'stdl-upgrade-to-pro', array($this, 'render_upgrade_page'));
         }
 
         function generate_subscribers_list() {
@@ -72,7 +73,11 @@ if (!class_exists('STDL_Admin')) {
         }
 
         function settings_page() {
-            include(STDL_PATH . 'inc/views/backend/stdl-settings.php');
+            if (isset($_GET['action']) && $_GET['action'] == 'settings_form') {
+                include(STDL_PATH . 'inc/views/backend/stdl-settings.php');
+            } else {
+                include(STDL_PATH . 'inc/views/backend/stdl-all-forms.php');
+            }
         }
 
         function render_help_page() {
@@ -82,7 +87,9 @@ if (!class_exists('STDL_Admin')) {
         function render_about_page() {
             include(STDL_PATH . 'inc/views/backend/stdl-about.php');
         }
-
+        function render_upgrade_page() {
+            include(STDL_PATH . 'inc/views/backend/stdl-upgrade.php');
+        }
     }
 
     new STDL_Admin();

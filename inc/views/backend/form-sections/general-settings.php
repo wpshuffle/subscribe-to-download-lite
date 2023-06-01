@@ -1,6 +1,7 @@
-<div class="stdl-settings-each-section" data-tab="general">
-
+<div class="stdl-settings-each-section stdl-form-flx" data-tab="general">
+  <div class="stdl-form-left">
     <div class="stdl-field-wrap">
+      
         <label><?php esc_html_e('Download File', 'subscribe-to-download-lite'); ?></label>
         <div class="stdl-field">
             <input type="text" name="form_details[general][download_file]" value="<?php echo (!empty($form_details['general']['download_file'])) ? esc_url($form_details['general']['download_file']) : ''; ?>"/>
@@ -105,4 +106,15 @@
         <?php
     }
     ?>
+    </div>
+
+      <div class="stdl-form-right">
+            <?php
+            /**
+             * Upgrade Field
+             */
+            include(STDL_PATH . 'inc/views/backend/upgrade.php');
+            ?>
+
+        </div>
 </div>

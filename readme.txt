@@ -5,7 +5,7 @@ Tags: subscribe, subscription, subscription plugin, form, download, email
 Requires at least: 5.0
 Tested up to: 6.2
 Requires PHP: 7.0.0
-Stable tag: 1.2.2
+Stable tag: 1.2.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -96,6 +96,9 @@ Our plugin do have the feature to encrypt the download link so that it will only
 9. Backend Email Settings
 
 == Changelog ==
+= 1.2.3 = 
+* Updated upgrade sections in backend
+
 = 1.2.2 = 
 * Checked WP Version 6.2 compatibility
 

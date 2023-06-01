@@ -1,6 +1,6 @@
 <?php $selected_layout = (!empty( $form_details['layout']['template'] )) ? esc_attr( $form_details['layout']['template'] ) : 'template-1'; ?>
-<div class="stdl-settings-each-section" data-tab="layout" style="display:none;">
-
+<div class="stdl-settings-each-section stdl-form-flx" data-tab="layout" style="display:none;">
+    <div class="stdl-form-left">
     <div class="stdl-field-wrap">
         <label><?php esc_html_e( 'Form Layout', 'subscribe-to-download-lite' ); ?></label>
         <div class="stdl-field">
@@ -194,6 +194,14 @@
             <input type="text" name="form_details[layout][popup_trigger_text]" value="<?php echo (!empty( $form_details['layout']['popup_trigger_text'] )) ? esc_attr( $form_details['layout']['popup_trigger_text'] ) : ''; ?>"/>
         </div>
     </div>
+            </div>
+    <div class="stdl-form-right">
+            <?php
+            /**
+             * Upgrade Field
+             */
+            include(STDL_PATH . 'inc/views/backend/upgrade.php');
+            ?>
 
-
+        </div>
 </div>
