@@ -1,36 +1,44 @@
-=== Subscribe to Download - An opt in to download plugin===
+=== Subscribe to Download - Download after Email Subscription Form WordPress Plugin===
 Contributors: wpshuffle
 Donate link: http://wpshuffle.com/
 Tags: subscribe, subscription, subscription plugin, form, download, email
 Requires at least: 5.0
 Tested up to: 6.4
 Requires PHP: 7.0.0
-Stable tag: 1.2.4
+Stable tag: 1.2.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Download after Subscription | Subscribe & Download | Popup Subscription Form
+Capture subscribers right from your WordPress site by simply providing them freebies to download through email after successful subscription
 
 == Description ==
-[Home](https://wpshuffle.com/) | [Demo](https://demo.wpshuffle.com/subscribe-to-download-lite/) | [Documentation](https://wpshuffle.com/wordpress-documentations/subscribe-to-download-lite/) | [Upgrade to PRO](https://1.envato.market/Q3KGo) | [Compatible Themes](https://afthemes.com/products/)
- 
+Subscribe to Download Lite makes it fast and easy to capture subscribers right from your WordPress site by simply providing them freebies to download through email after successful subscription. If you don’t have any freebies to offer then you can even use our plugin just as a subscription plugin too.
 
-As the name explains, <strong>Subscribe to Download Lite</strong> makes it fast and easy to capture subscribers right from your WordPress site by simply providing them a freebies to download through email after successful subscription. If you don't have any freebies to offer then you can even use our plugin just as a subscription plugin too.
+Unlock the power of seamless content distribution with Subscribe to Download Lite – the ultimate solution for driving engagement through subscriptions. Supercharge your WordPress site by offering exclusive downloads in exchange for subscriptions, effortlessly managed through an array of user-friendly features.
 
-You can enable or disable <strong>each form component</strong>, choose a stunning layout from our <strong>5 beautifully pre designed templates</strong>, <strong>encrypt download link</strong> and <strong>track download status</strong>, <strong>export subscribers</strong> and what not. With this plugin you are just few seconds away from collecting the subscribers from your WordPress site because configuring and integrating a subscription form in any site is that easy with our plugin.
+= Key Features= 
 
+* 🎨 <strong>Stunning Templates</strong>: Choose from 5 pre-designed subscription form templates that effortlessly blend with your site's aesthetics, ensuring a captivating user experience.
 
-= See full features list below: =
-* 5 Pre Designed Subscription Form Templates
-* Encrypted download link
-* Popup Subscription Form
-* Enable disable each form components
-* Ajax Form Submission
-* Subscribers CSV Export
-* Backend Form Preview
-* Mobile Responsive
-* Translation Ready
-* Customize Email message, From Name and From Email
+* 🔒 <strong>Encrypted Download Links</strong>: Secure your valuable content with encrypted download links, providing an added layer of protection for your premium offerings.
+
+* 🌐 <strong>Popup Subscription Form</strong>: Capture your audience's attention with a sleek and customizable popup subscription form, strategically designed to boost subscription rates.
+
+* ⚙️ <strong>Component Control</strong>: Enjoy complete control over each form component – easily enable or disable elements to tailor the subscription process to your specific needs.
+
+* 🚀 <strong>Ajax Form Submission</strong>: Revolutionize the user experience with Ajax form submission, delivering a seamless and lightning-fast subscription process without page reloads.
+
+* 📊 <strong>CSV Export</strong>: Effortlessly manage your subscriber data with the ability to export subscribers' details to a CSV file, ensuring seamless integration with your marketing strategies.
+
+* 👁️ <strong>Backend Form Preview</strong>: Fine-tune your subscription forms with confidence using the backend form preview, providing a real-time glimpse into the user experience.
+
+* 📱 <strong>Mobile Responsiveness</strong>: Ensure a flawless experience across all devices with a mobile-responsive design, catering to the diverse preferences of your audience.
+
+* 🌐 <strong>Translation Ready</strong>: Reach a global audience by easily translating the plugin into multiple languages, breaking down language barriers for effective communication.
+
+* 🎨 <strong>Customization Galore</strong>: Personalize the entire subscription process by customizing email messages, sender names, and sender email addresses, establishing a consistent brand presence.
+
+Elevate your subscription game with Subscribe to Download Lite – the essential tool for WordPress site owners who prioritize user engagement, security, and customization. Download now and embark on a journey to redefine your content distribution strategy!
 
 = Check Premium Features = 
 * Create Unlimited Form with different restrictions
@@ -96,6 +104,9 @@ Our plugin do have the feature to encrypt the download link so that it will only
 9. Backend Email Settings
 
 == Changelog ==
+= 1.2.5 = 
+* Added review notice 
+
 = 1.2.4 = 
 * Checked WP Version 6.3 compatibility
 

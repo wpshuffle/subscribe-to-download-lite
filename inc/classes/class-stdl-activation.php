@@ -11,6 +11,7 @@ if (!class_exists('STDL_Activation')) {
 
         function activation_tasks() {
             $this->create_tables();
+            $this->update_install_date();
         }
 
         function create_tables() {
@@ -29,11 +30,16 @@ if (!class_exists('STDL_Activation')) {
                     PRIMARY KEY  (subscriber_id)
                   ) $charset_collate;";
 
-            require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
+            require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
 
             dbDelta($subscribers_table_sql);
         }
 
+        function update_install_date() {
+            if (empty(get_option('stdl_plugin_install_date'))) {
+                update_option('stdl_plugin_install_date', date('Y-m-d'));
+            }
+        }
     }
 
     new STDL_Activation();
