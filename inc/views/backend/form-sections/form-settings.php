@@ -115,7 +115,7 @@
                     <div class="stdl-field-wrap">
                         <label><?php esc_html_e('Button Text', 'subscribe-to-download-lite'); ?></label>
                         <div class="stdl-field">
-                            <input type="text" name="form_details[form][subscribe_button][button_text]" placeholder="<?php esc_html_e('Subscribe & Download', 'subscribe-to-download-lite'); ?>" value="<?php echo (!empty($form_details['form']['subscribe_button']['button_text'])) ? esc_attr($form_details['form']['subscribe_button']['button_text']) : ''; ?>">
+                            <input type="text" name="form_details[form][subscribe_button][button_text]" value="<?php echo (!empty($form_details['form']['subscribe_button']['button_text'])) ? esc_attr($form_details['form']['subscribe_button']['button_text']) : ''; ?>">
                         </div>
                     </div>
                 </div>
@@ -141,9 +141,6 @@
                 </div>
             </div>
         </div>
-
-
-
         <div class="stdl-form-right stdl-box">
             <?php
             /**
@@ -153,12 +150,5 @@
             ?>
 
         </div>
-
-
-
-
-
-
-
     </div>
 </div>

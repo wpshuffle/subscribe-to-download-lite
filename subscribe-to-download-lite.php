@@ -5,7 +5,7 @@ defined('ABSPATH') or die('No script kiddies please!');
   Plugin Name: Subscribe To Download Lite
   Plugin URI:  https://wpshuffle.com/subscribe-to-download-lite
   Description: A plugin to collect email using an email subscribing form by providing the free downloadable items
-  Version:     1.2.5
+  Version:     1.2.6
   Author:      WP Shuffle
   Author URI:  http://wpshuffle.com
   Domain Path: /languages

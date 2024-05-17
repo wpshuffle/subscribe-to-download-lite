@@ -10,14 +10,14 @@ $preview_url = site_url() . '?stdl_preview=true&_wpnonce=' . wp_create_nonce('st
             <span class="stdl-sub-header"><?php esc_html_e('Subscription Form Settings', 'subscribe-to-download-lite'); ?></span>
         </h1>
         <div class="stdl-social">
-                <a href="https://www.facebook.com/wpshuffle/" target="_blank"><i class="dashicons dashicons-facebook-alt"></i></a>
-                <a href="https://twitter.com/wpshuffle/" target="_blank"><i class="dashicons dashicons-twitter"></i></a>
-            </div>
+            <a href="https://www.facebook.com/wpshuffle/" target="_blank"><i class="dashicons dashicons-facebook-alt"></i></a>
+            <a href="https://twitter.com/wpshuffle/" target="_blank"><i class="dashicons dashicons-twitter"></i></a>
+        </div>
         <div class="stdl-add-wrap">
-            
+
             <a href="javascript:void(0);" class="stdl-form-save-trigger"><input type="button" class="stdl-button-white" value="<?php esc_html_e('Save', 'subscribe-to-download-lite'); ?>"></a>
             <a href="<?php echo esc_url($preview_url); ?>" target="_blank"><input type="button" class="stdl-button-orange" value="<?php esc_html_e('Preview', 'subscribe-to-download-lite'); ?>"></a>
-            <a href="https://wpshuffle.com/contact-us/" target="_blank" class="stdl-support"><img src="<?php echo STDL_URL . 'images/support.svg' ?>" class="stdl-support-svg" /><input type="button" class="stdl-button-orange" value="<?php esc_html_e('Support', 'subscribe-to-download-lite'); ?>"></a>
+            <a href="https://wordpress.org/support/plugin/subscribe-to-download-lite/" target="_blank" class="stdl-support"><img src="<?php echo STDL_URL . 'images/support.svg' ?>" class="stdl-support-svg" /><input type="button" class="stdl-button-orange" value="<?php esc_html_e('Support', 'subscribe-to-download-lite'); ?>"></a>
             <a href="https://wpshuffle.com/wordpress-documentations/subscribe-to-download-lite/" target="_blank" class="stdl-documentation"><i class="dashicons dashicons-media-document"></i><input type="button" class="stdl-button-orange" value="<?php esc_html_e('Documentation', 'subscribe-to-download-lite'); ?>"></a>
         </div>
     </div>

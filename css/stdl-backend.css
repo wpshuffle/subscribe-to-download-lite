@@ -1036,14 +1036,16 @@ a.stdl-pro-feature-btns::before {
   padding: 20px;
 }
 
-@media screen 
-and (min-device-width: 1024px) 
-and (max-device-width: 1460px) 
-and (-webkit-min-device-pixel-ratio: 1) {
-    .stdl-form-left {
-
+@media screen and (min-device-width: 1024px) and (max-device-width: 1460px) and (-webkit-min-device-pixel-ratio: 1) {
+  .stdl-form-left {
     width: 75%;
-
+  }
 }
+#stdl-review-notice a {
+  margin-right: 20px;
 }
-#stdl-review-notice a{margin-right: 20px;}
+p.description-note {
+  background: #e1da32;
+  padding: 2px 5px;
+  font-style: italic;
+}

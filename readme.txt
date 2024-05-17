@@ -1,11 +1,11 @@
-=== Subscribe to Download - Download after Email Subscription Form WordPress Plugin===
+=== Subscribe to Download Lite - Download after Email Subscription Form WordPress Plugin ===
 Contributors: wpshuffle
 Donate link: http://wpshuffle.com/
-Tags: subscribe, subscription, subscription plugin, form, download, email
+Tags: subscribe, subscription, subscription plugin, form, download
 Requires at least: 5.0
-Tested up to: 6.4
+Tested up to: 6.5
 Requires PHP: 7.0.0
-Stable tag: 1.2.5
+Stable tag: 1.2.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,7 +16,7 @@ Subscribe to Download Lite makes it fast and easy to capture subscribers right f
 
 Unlock the power of seamless content distribution with Subscribe to Download Lite – the ultimate solution for driving engagement through subscriptions. Supercharge your WordPress site by offering exclusive downloads in exchange for subscriptions, effortlessly managed through an array of user-friendly features.
 
-= Key Features= 
+= Subscribe to Download Lite Features = 
 
 * 🎨 <strong>Stunning Templates</strong>: Choose from 5 pre-designed subscription form templates that effortlessly blend with your site's aesthetics, ensuring a captivating user experience.
 
@@ -40,12 +40,12 @@ Unlock the power of seamless content distribution with Subscribe to Download Lit
 
 Elevate your subscription game with Subscribe to Download Lite – the essential tool for WordPress site owners who prioritize user engagement, security, and customization. Download now and embark on a journey to redefine your content distribution strategy!
 
-= Check Premium Features = 
+= Check Subscribe to Download Features = 
 * Create Unlimited Form with different restrictions
 * 20 Pre Designed Subscription Form Templates
 * Show popup form with delay on individual page
 * Custom Form Styler Available
-* Mailchimp and Constant Contact Integration available
+* Mailchimp,Constant Contact, Mailerlite and Sendinblue Integration available
 * Track Download Status
 * And many more ...
 
@@ -91,19 +91,32 @@ The subscriber will receive the link of the downloadable file in the email throu
 = How can I prevent the subscribers from direct link sharing of downloadable item?
 Our plugin do have the feature to encrypt the download link so that it will only valid for the specific subscriber.
 
+= What happens when I turn on Encrypt Download Link? = 
+When this option is turned on in the general settings, our plugin will send the encrypted download link instead of the direct file link for download and our plugin will use the browser cookies to verify if the link has been clicked from the same browser or not from which the subscription has been done. If the link has been clicked from different browser then it will just open the home page which will prevent the direct link sharing. And also it will help to track the download status for the specific subscriber. 
+
+= When I click on the download link, it opens the home page instead of downloading the file? = 
+That is because you may have turned on the Encrypt Download Link option. Please check above FAQ for the detail about this feature.
+
 == Screenshots ==
 
-1. Form Template 1
-2. Form Template 2
-3. Form Template 3
-4. Form Template 4
-5. Form Template 5
-6. Backend General Settings
-7. Backend Form Fields Settings
-8. Backend Layout Settings
-9. Backend Email Settings
+1. Subscribe to Download Form Template 1
+2. Subscribe to Download Form Template 2
+3. Subscribe to Download Form Template 3
+4. Subscribe to Download Form Template 4
+5. Subscribe to Download Form Template 5
+6. Subscribe to Download Backend General Settings
+7. Subscribe to Download Backend Form Fields Settings
+8. Subscribe to Download Backend Layout Settings
+9. Subscribe to Download Backend Email Settings
 
 == Changelog ==
+= 1.2.6 = 
+* Fixed CSV download status bug
+* Added encrypt download link notice
+* Added remind later for review notice
+* Stored default settings on plugin activation
+
+
 = 1.2.5 = 
 * Added review notice 
 

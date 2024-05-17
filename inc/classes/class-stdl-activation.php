@@ -10,8 +10,18 @@ if (!class_exists('STDL_Activation')) {
         }
 
         function activation_tasks() {
+            $this->set_default_settings();
             $this->create_tables();
             $this->update_install_date();
+        }
+
+        function set_default_settings() {
+            $form_details = get_option('stdl_settings');
+            if (empty($form_details)) {
+                global $stdl_library;
+                $default_settings = $stdl_library->get_default_settings();
+                update_option('stdl_settings', $default_settings);
+            }
         }
 
         function create_tables() {
@@ -34,6 +44,8 @@ if (!class_exists('STDL_Activation')) {
 
             dbDelta($subscribers_table_sql);
         }
+
+
 
         function update_install_date() {
             if (empty(get_option('stdl_plugin_install_date'))) {

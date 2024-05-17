@@ -64,7 +64,7 @@ if (!class_exists('STDL_Admin')) {
             $csv_rows[] = array('Subscriber Name', 'Subscriber Email', 'Download Status');
             if (!empty($subscriber_rows)) {
                 foreach ($subscriber_rows as $subscriber_row) {
-                    $download_status = (!empty($subscriber_row->download_status)) ? esc_html__('Yes', 'subscribe-to-download-lite') : esc_html__('No', 'subscribe-to-download-lite');
+                    $download_status = (!empty($subscriber_row->subscriber_download_status)) ? esc_html__('Yes', 'subscribe-to-download-lite') : esc_html__('No', 'subscribe-to-download-lite');
                     $csv_row = array($subscriber_row->subscriber_name, $subscriber_row->subscriber_email, $download_status);
                     $csv_rows[] = $csv_row;
                 }

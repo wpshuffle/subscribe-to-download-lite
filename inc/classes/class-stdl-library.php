@@ -270,126 +270,69 @@ Thank you', esc_attr(get_bloginfo('name'))), 'subscribe-to-download-lite');
             }
         }
 
-        function get_mc_headers($api_key) {
-            global $wp_version;
-
-            $headers = array();
-            $headers['Authorization'] = 'Basic ' . base64_encode('std:' . $api_key);
-            $headers['Accept'] = 'application/json';
-            $headers['Content-Type'] = 'application/json';
-            $headers['User-Agent'] = 'std/' . STDL_VERSION . '; WordPress/' . $wp_version . '; ' . get_bloginfo('url');
-
-
-
-            return $headers;
-        }
-
-        function get_cc_headers($access_token) {
-            global $wp_version;
-
-            $headers = array();
-            $headers['Authorization'] = 'Bearer ' . $access_token;
-            $headers['Accept'] = 'application/json';
-            $headers['Content-Type'] = 'application/json';
-            $headers['User-Agent'] = 'std/' . STDL_VERSION . '; WordPress/' . $wp_version . '; ' . get_bloginfo('url');
-            return $headers;
-        }
-
-        function mailchimp_api_connection($api_url, $api_key) {
-            $api_url = STDL_MC_API_URL;
-            $dash_position = strpos($api_key, '-');
-            if ($dash_position !== false) {
-                $api_url = str_replace('//api.', '//' . substr($api_key, $dash_position + 1) . ".api.", $api_url);
-                $args = array(
-                    'url' => $api_url,
-                    'method' => $method,
-                    'headers' => $this->get_mc_headers($api_key),
-                    'timeout' => 10,
-                    'sslverify' => apply_filters('stdl_mc_use_sslverify', true),
-                );
-                $api_url = add_query_arg(array('fields' => 'account_id'), $api_url);
-                $mailchimp_connection = wp_remote_get($api_url, $args);
-            }
-        }
-
         /**
-         * Subscribe the user to mailchimp list
-         *
-         * @param string $list_id
-         * @param array $post_parameters
-         * @return null
+         * Default Settings
          */
-        function subscribe_to_mailchimp($list_id, $post_parameters) {
-            $api_key = $this->get_mailchimp_api_key();
-            if (empty($api_key)) {
-                return;
-            }
-            $api_url = STDL_MC_API_URL;
-            $dash_position = strpos($api_key, '-');
-            if ($dash_position !== false) {
-                $api_url = str_replace('//api.', '//' . substr($api_key, $dash_position + 1) . ".api.", $api_url);
-                $api_url = $api_url . 'lists/' . $list_id;
-                $method = 'POST';
-                $args = array(
-                    'url' => $api_url,
-                    'headers' => $this->get_mc_headers($api_key),
-                    'timeout' => 10,
-                    'sslverify' => true,
-                    'body' => json_encode($post_parameters)
-                );
-                $mailchimp_connection = wp_remote_post($api_url, $args);
 
+        function get_default_settings() {
+            $url = site_url();
 
-                $this->record_mc_response(wp_remote_retrieve_body($mailchimp_connection));
-            }
-        }
+            // Parse the URL
+            $parsed_url = parse_url($url);
 
-        function get_mailchimp_api_key() {
-            $stdl_settings = get_option('stdl_settings');
-            return (!empty($stdl_settings['mailchimp']['api_key'])) ? $stdl_settings['mailchimp']['api_key'] : '';
-        }
-
-        function record_mc_response($raw_response) {
-            $stdl_settings = get_option('stdl_settings');
-            $stdl_settings['mailchimp']['mc_log'] = $this->sanitize_html($raw_response);
-            update_option('stdl_settings', $stdl_settings);
-        }
-
-        /**
-         * Subscribe the user to constant contact list
-         *
-         * @param string $list_id
-         * @param array $post_parameters
-         * @return null
-         */
-        function subscribe_to_cc($list_id, $post_parameters) {
-            $stdl_settings = get_option('stdl_settings');
-            if (empty($stdl_settings['constant_contact']['api_key']) || empty($stdl_settings['constant_contact']['access_token'])) {
-                return;
-            }
-            $api_url = STDL_CC_API_URL;
-            $api_key = $stdl_settings['constant_contact']['api_key'];
-            $access_token = $stdl_settings['constant_contact']['access_token'];
-            $api_url = $api_url . 'contacts?action_by=ACTION_BY_OWNER&api_key=' . $api_key;
-            $method = 'POST';
-            $args = array(
-                'url' => $api_url,
-                'headers' => $this->get_cc_headers($access_token),
-                'timeout' => 10,
-                'sslverify' => true,
-                'body' => json_encode($post_parameters)
+            // Get the domain
+            $domain = $parsed_url['host'];
+            $form_details = array(
+                'general' => array(
+                    'download_file' => '',
+                    'download_file_id' => '',
+                    'success_message' => esc_html__('Subscription successful. Please download the file sent in your email.', 'subscribe-to-download-lite'),
+                    'required_error_message' => esc_html__('Please fill all the required fields', 'subscribe-to-download-lite'),
+                    'error_message' => esc_html__('There occurred some error while sending the email.', 'subscribe-to-download-lite'),
+                    'download_button_text' => esc_html__('Download', 'subscribe-to-download-lite')
+                ),
+                'form' => array(
+                    'heading' => array(
+                        'text' => ''
+                    ),
+                    'sub_heading' => array(
+                        'text' => ''
+                    ),
+                    'name' => array(
+                        'show' => 1,
+                        'label' => 'Your Name'
+                    ),
+                    'email' => array(
+                        'label' => 'Your Email'
+                    ),
+                    'terms_agreement' => array(
+                        'agreement_text' => ''
+                    ),
+                    'subscribe_button' => array(
+                        'button_text' => 'Subscribe & Download'
+                    ),
+                    'footer' => array(
+                        'footer_text' => ''
+                    )
+                ),
+                'layout' => array(
+                    'template' => 'template-1',
+                    'form_width' => '',
+                    'template_5' => array(
+                        'icon_image' => ''
+                    ),
+                    'display_type' => 'direct',
+                    'popup_trigger_text' => ''
+                ),
+                'email' => array(
+                    'subject' => esc_html__('Download your file', 'subscribe-to-download-lite'),
+                    'from_email' => 'noreply@' . $domain,
+                    'from_name' => 'No Reply',
+                    'email_message' => ''
+                )
             );
-            $contant_contact_connection = wp_remote_post($api_url, $args);
-            $this->record_cc_response(wp_remote_retrieve_body($contant_contact_connection));
-            return $contant_contact_connection;
+            return $form_details;
         }
-
-        function record_cc_response($raw_response) {
-            $stdl_settings = get_option('stdl_settings');
-            $stdl_settings['constant_contact']['cc_log'] = $this->sanitize_html($raw_response);
-            update_option('stdl_settings', $stdl_settings);
-        }
-
     }
 
     $GLOBALS['stdl_library'] = new STDL_Library();
