@@ -5,7 +5,7 @@ defined('ABSPATH') or die('No script kiddies please!');
   Plugin Name: Subscribe To Download Lite
   Plugin URI:  https://wpshuffle.com/subscribe-to-download-lite
   Description: A plugin to collect email using an email subscribing form by providing the free downloadable items
-  Version:     1.2.6
+  Version:     1.2.7
   Author:      WP Shuffle
   Author URI:  http://wpshuffle.com
   Domain Path: /languages
@@ -41,7 +41,7 @@ if (!class_exists('STDL_Class')) {
             defined('STDL_TD') or define('STDL_TD', 'subscribe-to-download-lite'); //plugin's translation text domain
             defined('STDL_SUBSCRIBERS_TABLE') or define('STDL_SUBSCRIBERS_TABLE', $wpdb->prefix . 'std_subscribers'); //plugin's subscriber table
             defined('STDL_TOTAL_TEMPLATES') or define('STDL_TOTAL_TEMPLATES', 5); //Total number of templates available
-            defined('STDL_UPGRADE_LINK') or define('STDL_UPGRADE_LINK','https://1.envato.market/Q3KGo');
+            defined('STDL_UPGRADE_LINK') or define('STDL_UPGRADE_LINK', 'https://1.envato.market/Q3KGo');
         }
 
         /**

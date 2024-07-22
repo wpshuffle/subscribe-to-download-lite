@@ -3,9 +3,9 @@ Contributors: wpshuffle
 Donate link: http://wpshuffle.com/
 Tags: subscribe, subscription, subscription plugin, form, download
 Requires at least: 5.0
-Tested up to: 6.5
+Tested up to: 6.6
 Requires PHP: 7.0.0
-Stable tag: 1.2.6
+Stable tag: 1.2.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -110,6 +110,10 @@ That is because you may have turned on the Encrypt Download Link option. Please 
 9. Subscribe to Download Backend Email Settings
 
 == Changelog ==
+= 1.2.7 = 
+* Updated the upgrade banner
+* Fixed wrong shortcode display in form listing
+
 = 1.2.6 = 
 * Fixed CSV download status bug
 * Added encrypt download link notice

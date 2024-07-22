@@ -8,7 +8,7 @@ defined('ABSPATH') or die('No script kiddies please!!');
             <span class="stdl-sub-header"><?php esc_html_e('Subscription Forms', 'subscribe-to-download-lite'); ?></span>
         </h1>
         <div class="stdl-add-wrap">
-            <a href="<?php echo STDL_UPGRADE_LINK; ?>" target="_blank"  class="stdl-pro-feature-btns"><input type="button" class="stdl-button-white" value="<?php esc_html_e('Add New Form', 'subscribe-to-download-lite'); ?>"></a>
+            <a href="<?php echo STDL_UPGRADE_LINK; ?>" target="_blank" class="stdl-pro-feature-btns"><input type="button" class="stdl-button-white" value="<?php esc_html_e('Add New Form', 'subscribe-to-download-lite'); ?>"></a>
         </div>
     </div>
     <div class="stdl-form-wrap">
@@ -28,7 +28,7 @@ defined('ABSPATH') or die('No script kiddies please!!');
                         <a href="<?php echo admin_url('admin.php?page=stdl-settings&action=settings_form'); ?>" title="<?php esc_html_e('Edit Form', 'subscribe-to-download-lite'); ?>">Subscribe to Download</a>
                     </td>
                     <td>
-                        <span class="stdl-shortcode-preview">[subscribe_to_download]</span>
+                        <span class="stdl-shortcode-preview">[subscribe_to_download_form]</span>
                         <span class="stdl-clipboard-copy"><i class="fas fa-clipboard-list"></i></span>
                     </td>
                     <td>
