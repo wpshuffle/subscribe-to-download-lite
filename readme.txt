@@ -3,9 +3,9 @@ Contributors: wpshuffle
 Donate link: http://wpshuffle.com/
 Tags: subscribe, subscription, subscription plugin, form, download
 Requires at least: 5.0
-Tested up to: 6.6
+Tested up to: 6.7
 Requires PHP: 7.0.0
-Stable tag: 1.2.7
+Stable tag: 1.2.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,6 +15,8 @@ Capture subscribers right from your WordPress site by simply providing them free
 Subscribe to Download Lite makes it fast and easy to capture subscribers right from your WordPress site by simply providing them freebies to download through email after successful subscription. If you don’t have any freebies to offer then you can even use our plugin just as a subscription plugin too.
 
 Unlock the power of seamless content distribution with Subscribe to Download Lite – the ultimate solution for driving engagement through subscriptions. Supercharge your WordPress site by offering exclusive downloads in exchange for subscriptions, effortlessly managed through an array of user-friendly features.
+
+https://www.youtube.com/watch?v=pu7SpGOB9o0
 
 = Subscribe to Download Lite Features = 
 
@@ -110,6 +112,9 @@ That is because you may have turned on the Encrypt Download Link option. Please 
 9. Subscribe to Download Backend Email Settings
 
 == Changelog ==
+= 1.2.8 = 
+* Updated upgrade banner
+
 = 1.2.7 = 
 * Updated the upgrade banner
 * Fixed wrong shortcode display in form listing
@@ -199,7 +204,7 @@ That is because you may have turned on the Encrypt Download Link option. Please 
 
 = 1.0.0 =
 * Initial Commit to Repository
-* Initial plugin submit to wordpress.org
+* Initial plugin submit to wordpress.org 
 
 == Upgrade Notice ==
 There is a new version available for the plugin. Please update to get the latest update and bug fixes for this plugin.

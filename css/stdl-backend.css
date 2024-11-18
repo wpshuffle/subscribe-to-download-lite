@@ -977,6 +977,12 @@ a.stdl-pro-feature-btns::before {
 .stdl-form-flx {
   display: flex;
 }
+img.upgrade-image {
+  width: 75%;
+  max-width: 100%;
+  margin-top: 10px;
+  /* margin-bottom: 10px; */
+}
 
 @media only screen and (max-width: 600px) {
   .stdl-social {

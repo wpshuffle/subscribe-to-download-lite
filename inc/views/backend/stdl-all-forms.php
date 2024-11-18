@@ -11,6 +11,7 @@ defined('ABSPATH') or die('No script kiddies please!!');
             <a href="<?php echo STDL_UPGRADE_LINK; ?>" target="_blank" class="stdl-pro-feature-btns"><input type="button" class="stdl-button-white" value="<?php esc_html_e('Add New Form', 'subscribe-to-download-lite'); ?>"></a>
         </div>
     </div>
+    <?php include(STDL_PATH.'/inc/views/backend/upgrade-banner.php');?>
     <div class="stdl-form-wrap">
 
         <table class="wp-list-table widefat fixed stdl-form-lists-table">

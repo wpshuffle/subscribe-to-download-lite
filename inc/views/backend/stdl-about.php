@@ -12,6 +12,7 @@
             <a href="<?php echo STDL_UPGRADE_LINK;?>" target="_blank"><input type="button" class="stdl-button-white" value="<?php esc_html_e('Upgrade to PRO', 'subscribe-to-download-lite'); ?>"></a>
         </div>
     </div>
+    <?php include(STDL_PATH.'/inc/views/backend/upgrade-banner.php');?>
 
     <div class="stdl-form-wrap stdl-form-add-block stdl-clearfix">
 

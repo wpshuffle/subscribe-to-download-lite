@@ -21,6 +21,7 @@ $preview_url = site_url() . '?stdl_preview=true&_wpnonce=' . wp_create_nonce('st
             <a href="https://wpshuffle.com/wordpress-documentations/subscribe-to-download-lite/" target="_blank" class="stdl-documentation"><i class="dashicons dashicons-media-document"></i><input type="button" class="stdl-button-orange" value="<?php esc_html_e('Documentation', 'subscribe-to-download-lite'); ?>"></a>
         </div>
     </div>
+    <?php include(STDL_PATH.'/inc/views/backend/upgrade-banner.php');?>
     <div class="stdl-form-wrap stdl-form-add-block stdl-clearfix">
         <form method="post" action="" class="stdl-subscription-form" data-form-action="stdl_settings_save_action">
             <?php

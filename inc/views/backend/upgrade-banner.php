@@ -1,0 +1,1 @@
+<a href="<?php echo STDL_UPGRADE_LINK; ?>" target="_blank"><img class="upgrade-image" src="<?php echo STDL_URL . '/images/std-backend-banner-light-hr-btn.png'; ?>" /></a>
