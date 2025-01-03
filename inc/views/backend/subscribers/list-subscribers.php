@@ -18,6 +18,7 @@ defined('ABSPATH') or die('No script kiddies please!!');
             ?>
             <a href="<?php echo esc_url($export_url); ?>"><input type="button" class="stdl-button-orange" value="<?php esc_html_e('Export to CSV', 'subscribe-to-download-lite'); ?>"></a>
             <a href="<?php echo STDL_UPGRADE_LINK; ?>" target="_blank"><input type="button" class="stdl-button-white" value="<?php esc_html_e('Upgrade to PRO', 'subscribe-to-download-lite'); ?>"></a>
+            <div class="stdl-compare-btn"><div class="stdl-compare-click">Free Vs Pro</div></div>
         </div>
     </div>
     <?php include(STDL_PATH.'/inc/views/backend/upgrade-banner.php');?>

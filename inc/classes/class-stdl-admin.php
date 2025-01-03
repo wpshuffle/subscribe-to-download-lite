@@ -8,6 +8,10 @@ if (!class_exists('STDL_Admin')) {
         function __construct() {
             add_action('admin_menu', array($this, 'add_stdl_menu'));
             /**
+             *pro vs free 
+             */
+            add_action('admin_footer', array($this, 'pro_vs_free_compare_html'));
+            /**
              * Subscribers export to csv
              */
             add_action('admin_post_stdl_export_csv', array($this, 'export_to_csv'));
@@ -50,6 +54,15 @@ if (!class_exists('STDL_Admin')) {
                 exit;
             } else {
                 $this->permission_denied();
+            }
+        }
+        function pro_vs_free_compare_html() {
+            if (isset($_GET['page'])) {
+                $page = sanitize_text_field($_GET['page']);
+                $include_pages = ['stdl-settings', 'stdl-subscribers', 'stdl-help', 'stdl-about'];
+                if (in_array($page, $include_pages)) {
+                    include(STDL_PATH . 'inc/views/backend/stdl-pro-vs-free.php');
+                }
             }
         }
 

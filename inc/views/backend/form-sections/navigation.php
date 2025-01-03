@@ -4,5 +4,6 @@
         <li><a href="javascript:void(0);" class="stdl-nav-item" data-tab="form"><span class="dashicons dashicons-feedback"></span><?php esc_html_e('Form Settings', 'subscribe-to-download-lite'); ?></a></li>
         <li><a href="javascript:void(0);" class="stdl-nav-item" data-tab="layout"><span class="dashicons dashicons-layout"></span><?php esc_html_e('Layout Settings', 'subscribe-to-download-lite'); ?></a></li>
         <li><a href="javascript:void(0);" class="stdl-nav-item" data-tab="email"><span class="dashicons dashicons-email"></span><?php esc_html_e('Email Settings', 'subscribe-to-download-lite'); ?></a></li>
+        <li><a href="javascript:void(0);" class="stdl-nav-item" data-tab="upgrade"><span class="dashicons dashicons-star-filled"></span><?php esc_html_e('Upgrade To Pro', 'subscribe-to-download-lite'); ?></a></li>
     </ul>
 </div>

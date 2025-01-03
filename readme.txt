@@ -5,7 +5,7 @@ Tags: subscribe, subscription, subscription plugin, form, download
 Requires at least: 5.0
 Tested up to: 6.7
 Requires PHP: 7.0.0
-Stable tag: 1.2.8
+Stable tag: 1.2.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -112,6 +112,10 @@ That is because you may have turned on the Encrypt Download Link option. Please 
 9. Subscribe to Download Backend Email Settings
 
 == Changelog ==
+= 1.2.9 =
+* Updated upgrade section
+* Added Free vs PRO section
+
 = 1.2.8 = 
 * Updated upgrade banner
 
@@ -204,7 +208,7 @@ That is because you may have turned on the Encrypt Download Link option. Please 
 
 = 1.0.0 =
 * Initial Commit to Repository
-* Initial plugin submit to wordpress.org 
+* Initial plugin submit to wordpress.org
 
 == Upgrade Notice ==
 There is a new version available for the plugin. Please update to get the latest update and bug fixes for this plugin.

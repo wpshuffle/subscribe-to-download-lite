@@ -19,6 +19,7 @@ $preview_url = site_url() . '?stdl_preview=true&_wpnonce=' . wp_create_nonce('st
             <a href="<?php echo esc_url($preview_url); ?>" target="_blank"><input type="button" class="stdl-button-orange" value="<?php esc_html_e('Preview', 'subscribe-to-download-lite'); ?>"></a>
             <a href="https://wordpress.org/support/plugin/subscribe-to-download-lite/" target="_blank" class="stdl-support"><img src="<?php echo STDL_URL . 'images/support.svg' ?>" class="stdl-support-svg" /><input type="button" class="stdl-button-orange" value="<?php esc_html_e('Support', 'subscribe-to-download-lite'); ?>"></a>
             <a href="https://wpshuffle.com/wordpress-documentations/subscribe-to-download-lite/" target="_blank" class="stdl-documentation"><i class="dashicons dashicons-media-document"></i><input type="button" class="stdl-button-orange" value="<?php esc_html_e('Documentation', 'subscribe-to-download-lite'); ?>"></a>
+            <div class="stdl-compare-btn"><div class="stdl-compare-click">Free Vs Pro</div></div>
         </div>
     </div>
     <?php include(STDL_PATH.'/inc/views/backend/upgrade-banner.php');?>
@@ -61,6 +62,12 @@ $preview_url = site_url() . '?stdl_preview=true&_wpnonce=' . wp_create_nonce('st
                  * Email Settings
                  */
                 include(STDL_PATH . 'inc/views/backend/form-sections/email-settings.php');
+                ?>
+                 <?php
+                /**
+                 * Email Settings
+                 */
+                include(STDL_PATH . 'inc/views/backend/form-sections/stdl-upgrade-to-pro.php');
                 ?>
 
             </div>

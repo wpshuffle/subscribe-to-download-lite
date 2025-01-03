@@ -268,7 +268,14 @@ jQuery(document).ready(function ($) {
     });
 
     
-    
+    $(".stdl-compare-click").click(function () {
+        $(".stdl-compare-panel").toggle();
+        $(".stdl-wrap").toggleClass("stdl-compare-overlay");
+    });
+    $(".close-panel").click(function () {
+        $(".stdl-compare-panel").hide();
+        $(".stdl-wrap").removeClass("stdl-compare-overlay");
+    });
 
     
 

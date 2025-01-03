@@ -9,6 +9,7 @@ defined('ABSPATH') or die('No script kiddies please!!');
         </h1>
         <div class="stdl-add-wrap">
             <a href="<?php echo STDL_UPGRADE_LINK; ?>" target="_blank" class="stdl-pro-feature-btns"><input type="button" class="stdl-button-white" value="<?php esc_html_e('Add New Form', 'subscribe-to-download-lite'); ?>"></a>
+            <div class="stdl-compare-btn"><div class="stdl-compare-click">Free Vs Pro</div></div>
         </div>
     </div>
     <?php include(STDL_PATH.'/inc/views/backend/upgrade-banner.php');?>

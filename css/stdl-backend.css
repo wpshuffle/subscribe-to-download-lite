@@ -39,6 +39,8 @@
 
 .stdl-add-wrap a {
   text-decoration: none;
+  margin-bottom: 3px;
+  margin-right: 5px;
 }
 
 .stdl-clearfix::after {
@@ -808,7 +810,7 @@ a:focus {
 .stdl-documentation i.dashicons.dashicons-media-document {
   position: absolute;
   left: 13px;
-  top: 0;
+  top: 10px;
   color: #fff;
 }
 
@@ -823,7 +825,7 @@ a:focus {
 .stdl-support img {
   position: absolute;
   left: 13px;
-  top: 0;
+  top: 10px;
   fill: #fff;
   height: 20px;
   width: 20px;
@@ -899,7 +901,7 @@ a.stdl-pro-feature-btns::before {
   height: 24px;
   width: 24px;
   border-radius: -21px;
-  top: -20px;
+  top: -10px;
   background: url(../images/pro.svg);
   background-repeat: no-repeat;
   right: -4px;
@@ -978,11 +980,192 @@ a.stdl-pro-feature-btns::before {
   display: flex;
 }
 img.upgrade-image {
-  width: 75%;
   max-width: 100%;
   margin-top: 10px;
   /* margin-bottom: 10px; */
 }
+
+/* compare css */
+
+.stdl-compare-panel {
+  /* padding: 40px 0px; */
+  height: 83vh;
+  background-color: white;
+  box-shadow: rgba(23,120,255,0.14) 0 0 24px;
+  width: 75%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  z-index: 9999;
+  transition: all .4s ease;
+}
+.wrap.stdl-wrap.stdl-compare-overlay {
+  opacity: 20%;
+}
+
+
+/* .stdl-compare-panel.reveal {
+  right: 5px;
+} */
+.close-panel {
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  top: -10px;
+  right: -35px;
+  height: 30px;
+  width: 30px;
+  background-color: #da3838;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 100px;
+}
+.stdl-compare-head, .stdl-compare-row {
+  text-align: center;
+  flex-wrap: wrap;
+  border-bottom: solid 1px #e0e4ea;
+}
+
+.stdl-feat-col p {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 120%;
+  margin: 5px 0;
+}
+.stdl-compare-head .stdl-feat-col h2, .stdl-compare-row .stdl-feat-col h2 {
+  padding: 15px;
+  margin: 0;
+  line-height: 110%;
+  font-weight: 200;
+  font-size: 22px;
+  background-color: #93bb66;
+  color: white;
+}
+.compare-wrap-all {
+  height: calc(100vh - 244px);
+  height: -webkit-calc(100vh - 244px);
+  overflow-y: auto;
+}
+.stdl-compare-head, .stdl-compare-row {
+  text-align: center;
+  flex-wrap: wrap;
+  border-bottom: solid 1px #e0e4ea;
+}
+.stdl-compare-row .stdl-feat-col {
+  padding: 10px;
+}
+.stdl-compare-row .stdl-feat-col:nth-child(1) {
+  border-right: solid 1px rgba(0,0,0,0.08);
+}
+.stdl-compare-row .stdl-feat-col:nth-child(2) p.no, .stdl-compare-row .stdl-feat-col:nth-child(3) p.no {
+  color: #df6767;
+  font-size: 18px;
+}
+.stdl-compare-row .stdl-feat-col:nth-child(2) p.yes, .stdl-compare-row .stdl-feat-col:nth-child(3) p.yes {
+  color: #61d18e;
+  font-size: 18px;
+}
+.stdl-compare-head .stdl-feat-col h2.pro, .stdl-compare-row .stdl-feat-col h2.pro {
+  background-color: #e26667;
+}
+.stdl--flex, .theme-wrap {
+  display: flex;
+}
+.stdl-compare-head>div, .stdl-compare-row>div {
+  flex: 1;
+}
+.stdl-heading-comp {
+  display: flex;
+  justify-content: space-between;
+}
+.stdl-compare-click {
+  font-size: 12px;
+  background: #ffffff;
+  color: #464545 !important;
+  border-radius: 30px !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border: none;
+  font-weight: 600;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  padding: 0 25px;
+  line-height: 40px;
+  text-transform: uppercase;
+  border-radius: 44px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  font-weight: bold;
+  font-size: 11px;
+}
+.wrap.stdl-wrap.stdl-compare-overlay {
+  opacity: 20%;
+  pointer-events: none;
+}
+.stdl-compare-row .stdl-feat-col:nth-child(2){
+  border-right: solid 1px rgba(0, 0, 0, 0.08);
+}
+.stdl-compare-click:hover{
+  background: #3C3A37;
+  color: #fff !important;
+}
+.stdl-add-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.stdl-add-wrap.stdl-btn-cntr{
+  justify-content: center; 
+}
+.stdl-add-wrap.stdl-btn-cntr .stdl-hov:hover{
+  color:#fff;
+  background-color: #35a137;
+}
+.stdl-feat-col.stdl-inst h2 {
+  color: #3c434a;
+  font-weight: 500;
+  background: #fff;
+}
+* New upgrade to pro css */
+
+.stdl-sectn-intro {
+  width: 100%;
+}
+
+.stdl-sectn-intro h1 {
+  font-size: 32px;
+  font-weight: 500;
+}
+.stdl-sectn-intro p {
+  font-size: 16px;
+  line-height: 160%;
+}
+.stdl-check-demo-section h2 {
+  font-size: 26px;
+  font-weight: 500;
+}
+.stdl-check-demo-section p{
+  display: flex;
+}
+.stdl-check-demo-section img {
+  width: 85%;
+}
+.stdl-feat-img img {
+  max-width: 100%;
+}
+.stdl-compare-wrap{
+  display: flex;
+} 
+.std-upgrade-flx {
+  display: flex;
+  padding: 20px;
+}
+
 
 @media only screen and (max-width: 600px) {
   .stdl-social {
@@ -1055,3 +1238,10 @@ p.description-note {
   padding: 2px 5px;
   font-style: italic;
 }
+@media screen and (min-width: 1600px) {
+  .stdl-feat-img img {
+    width: auto;
+    max-width: unset;
+}
+
+}  
