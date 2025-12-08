@@ -88,7 +88,7 @@ if (!class_exists('STDL_Library')) {
          * @since 1.0.0
          */
         function admin_ajax_nonce_verify() {
-            if (!empty($_POST['_wpnonce']) && wp_verify_nonce($_POST['_wpnonce'], 'stdl_ajax_nonce')) {
+            if (!empty($_POST['_wpnonce']) && wp_verify_nonce($_POST['_wpnonce'], 'stdl_ajax_nonce') && current_user_can('manage_options')) {
                 return true;
             } else {
                 return false;
