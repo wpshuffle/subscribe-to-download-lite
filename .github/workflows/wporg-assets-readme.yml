@@ -1,0 +1,20 @@
+name: Update WordPress.org readme/assets
+
+on:
+  workflow_dispatch:
+
+jobs:
+  update-assets-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Update readme/assets on WordPress.org
+        uses: 10up/action-wordpress-plugin-asset-update@stable
+        env:
+          SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+          SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
+          SLUG: frontend-post-submission-manager-lite
+          IGNORE_OTHER_FILES: true
