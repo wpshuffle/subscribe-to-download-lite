@@ -16,5 +16,5 @@ jobs:
         env:
           SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
           SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
-          SLUG: frontend-post-submission-manager-lite
+          SLUG: subscribe-to-download-lite
           IGNORE_OTHER_FILES: true
