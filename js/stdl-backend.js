@@ -279,7 +279,48 @@ jQuery(document).ready(function ($) {
 
     
 
-    
+    jQuery(function ($) {
+
+    let current = 0;
+
+    const $track = $('.stdl-rating-track');
+    const total = $('.stdl-rating-card').length;
+    const visible = 3;
+
+    function slide() {
+        const cardWidth = $('.stdl-rating-card').outerWidth(true);
+
+        $track.css(
+            'transform',
+            'translateX(-' + (current * cardWidth) + 'px)'
+        );
+    }
+
+    $('.stdl-next').on('click', function (e) {
+        e.preventDefault();
+
+        if (current < total - visible) {
+            current++;
+        } else {
+            current = 0;
+        }
+
+        slide();
+    });
+
+    $('.stdl-prev').on('click', function (e) {
+        e.preventDefault();
+
+        if (current > 0) {
+            current--;
+        } else {
+            current = total - visible;
+        }
+
+        slide();
+    });
+
+});
 
     
 

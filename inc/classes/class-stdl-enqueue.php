@@ -29,6 +29,7 @@ if (!class_exists('STDL_Enqueue')) {
             wp_enqueue_media();
             wp_enqueue_style('fontawesome', STDL_URL . 'fontawesome/css/all.min.css', array(), STDL_VERSION);
             wp_enqueue_style('stdl-backend-style', STDL_CSS_DIR . '/stdl-backend.css', array(), STDL_VERSION);
+            wp_enqueue_style('stdl-fonts', STDL_URL . '/font-face/urbanist/stylesheet.css', array(), STDL_VERSION);
             wp_enqueue_script('stdl-backend-script', STDL_JS_DIR . '/stdl-backend.js', array('jquery', 'wp-color-picker', 'wp-util'), STDL_VERSION);
             wp_localize_script('stdl-backend-script', 'stdl_backend_obj', $stdl_backend_obj);
         }
