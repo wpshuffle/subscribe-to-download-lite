@@ -279,6 +279,18 @@ jQuery(document).ready(function ($) {
 
     
 
+        $(".stdl-faq-question").click(function () {
+
+    const currentItem = $(this).closest(".stdl-faq-item");
+
+    // close others
+    $(".stdl-faq-item").not(currentItem).removeClass("active");
+
+    // toggle current
+    currentItem.toggleClass("active");
+
+  });
+
     jQuery(function ($) {
 
     let current = 0;

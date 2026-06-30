@@ -2128,3 +2128,84 @@ h2.stdl-title {
     flex-wrap: nowrap;
 }
 }
+
+
+@media all and (max-width: 767px){
+    .stdl-trust-card-wrap {
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+  .stdl-hero-section {
+    flex-direction: column;
+}
+.stdl-hero-btn {
+    flex-direction: column;
+    gap: 16px;
+}
+.stdl-wrap {
+    padding: 8px;
+}
+.stdl-feat-card {
+    max-width: 330px;
+}
+.stdl-hero-section {
+    padding: 25px 16px;
+}
+.stdl-demo-card-wrap {
+    flex-direction: column;
+    align-items: center;
+}
+.stdl-hero-img-wrap {
+    margin-top: 32px;
+}
+.stdl-hero-img-wrap img {
+    width: 100%;
+}
+.stdl-rating-card-wrap {
+    flex-direction: column;
+}
+.stdl-hero-left, .stdl-hero-right {
+    width: 100%;
+}
+  h1.stdl-hero-heading {
+    font-size: 26px;
+}
+.stdl-hero-feat li {
+    font-size: 16px;
+}
+input.stdl-hero-button-primary {
+    font-size: 16px;
+}
+.stdl-hero-btn a input.stdl-button-secondary {
+    font-size: 16px;
+}
+.stdl-hero-btn a {
+    padding: 14px 24px;
+}
+h2.stdl-title {
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+}
+.stdl-demo-card h5 {
+    font-size: 20px;
+}
+.stdl-demo-card p {
+    font-size: 14px;
+}
+.stdl-review-name {
+    font-size: 14px;
+}
+.stdl-review-subject {
+    font-size: 12px;
+}
+.stdl-demo-card {
+    min-width: 209px;
+}
+.stdl-hiw-card-wrap {
+    justify-content: center;
+}
+}
