@@ -17,7 +17,7 @@
                 <a class="stdl-pri" href="<?php echo esc_url(STDL_UPGRADE_LINK); ?>" target="_blank">
                     <span class="dashicons dashicons-cart"></span>
                     <input type="button" class="stdl-hero-button-primary"
-                        value="<?php esc_html_e('Upgrade to PRO - $18', 'frontend-post-submission-manager-lite'); ?>">
+                        value="<?php esc_html_e('Upgrade to PRO - $18 Lifetime Updates', 'frontend-post-submission-manager-lite'); ?>">
                 </a>
                 <a href="https://demo.wpshuffle.com/subscribe-to-download/" target="_blank" class="fpsm-secondary"><input
                         type="button" class="stdl-button-secondary"
@@ -170,7 +170,7 @@
             <a class="stdl-pri" href="<?php echo esc_url(STDL_UPGRADE_LINK); ?>" target="_blank">
                     <span class="dashicons dashicons-cart"></span>
                     <input type="button" class="stdl-hero-button-primary"
-                        value="<?php esc_html_e('Upgrade to PRO - $25 Lifetime Updates', 'frontend-post-submission-manager-lite'); ?>">
+                        value="<?php esc_html_e('Upgrade to PRO - $18 Lifetime Updates', 'frontend-post-submission-manager-lite'); ?>">
                 </a>
         </div>
     </div>

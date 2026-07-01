@@ -1481,7 +1481,7 @@ input.stdl-hero-button-primary {
     font-family: 'Urbanist';
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     color: #FFFFFF;
     display: flex;
     flex-direction: row;
@@ -1499,20 +1499,20 @@ input.stdl-hero-button-primary {
 .stdl-hero-btn a input.stdl-button-secondary {
     background: transparent;
     color: #423F3A !important;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 120%;
 }
 .stdl-hero-btn a {
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 16px 32px;
+    padding: 16px 24px;
     color: #fff;
     gap: 10px;
     background: #1DBE61;
     width: max-content;
     border-radius: 8px;
-    margin-right: 24px;
+    margin-right: 16px;
 }
 
 
