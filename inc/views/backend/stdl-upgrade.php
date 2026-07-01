@@ -81,18 +81,6 @@
                 </a>
             </div>
             <div class="stdl-demo-card crd-3">
-                <a href="https://demo.wpshuffle.com/subscribe-to-download/wp-login.php?redirect_to=https%3A%2F%2Fdemo.wpshuffle.com%2Fsubscribe-to-download%2Fwp-admin%2Fadmin.php%3Fpage%3Dsubscribe-to-download&reauth=1">
-                    <div class="fpsm-demo-icon-wrap">
-                        <img loading="lazy" src="<?php echo STDL_URL . '/images/frontend.svg'; ?>" />
-                    </div>
-                    <div>
-                        <h5>Frontend Dashboard</h5>
-                        <p>User Dashboard Demo</p>
-                    </div>
-
-                </a>
-            </div>
-            <div class="stdl-demo-card crd-4">
                 <a href="https://demo.wpshuffle.com/subscribe-to-download/all-templates-demo/">
                     <div class="fpsm-demo-icon-wrap">
                         <img loading="lazy" src="<?php echo STDL_URL . '/images/templates.svg'; ?>" />
@@ -100,6 +88,18 @@
                     <div>
                         <h5>All Templates</h5>
                         <p>Templates Demo</p>
+                    </div>
+
+                </a>
+            </div>
+            <div class="stdl-demo-card crd-4">
+                <a href="https://demo.wpshuffle.com/subscribe-to-download/all-templates-demo/">
+                    <div class="fpsm-demo-icon-wrap">
+                        <img loading="lazy" src="<?php echo STDL_URL . '/images/custom.svg'; ?>" />
+                    </div>
+                    <div>
+                        <h5>Custom Demo</h5>
+                        <p>Custom Templates Demo</p>
                     </div>
 
                 </a>
