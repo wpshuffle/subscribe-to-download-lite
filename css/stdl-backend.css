@@ -2125,7 +2125,10 @@ h2.stdl-title {
     padding: 40px;
     display: flex;;
     color: #fff;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap;   
+}
+.stdl-demo-card-wrap {
+    justify-content: space-around;
 }
 }
 
