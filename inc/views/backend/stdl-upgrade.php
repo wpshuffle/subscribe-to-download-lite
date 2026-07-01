@@ -431,7 +431,23 @@
             </div>
                 </div>
             </div>
+ 
                         <div class="stdl-hiw-card stdl-crd-2">
+                <div class="stdl-hiw-img-wrap">
+                    <img loading="lazy" src="<?php echo STDL_URL . '/images/file.png'; ?>" />
+                    <div class="stdl-num">3</div>
+                </div>
+            <div class="stdl-hiw-des">
+                <div class="stdl-hiw-icon-icon">
+                 <img src="<?php echo STDL_URL . '/images/eye.svg'; ?>" />
+             </div>
+            <div class="stdl-hiw-content">
+                <h4>Upload Your Downloadable Resource</h4>
+                <p>Upload the resource you want visitors to access after subscribing.</p>
+            </div>
+                </div>
+            </div>
+                                   <div class="stdl-hiw-card stdl-crd-3">
                 <div class="stdl-hiw-img-wrap">
                     <img loading="lazy" src="<?php echo STDL_URL . '/images/integrate.png'; ?>" />
                     <div class="stdl-num">2</div>
@@ -446,21 +462,6 @@
             </div>
                 </div>
             </div>
-                        <div class="stdl-hiw-card stdl-crd-3">
-                <div class="stdl-hiw-img-wrap">
-                    <img loading="lazy" src="<?php echo STDL_URL . '/images/file.png'; ?>" />
-                    <div class="stdl-num">3</div>
-                </div>
-            <div class="stdl-hiw-des">
-                <div class="stdl-hiw-icon-icon">
-                 <img src="<?php echo STDL_URL . '/images/eye.svg'; ?>" />
-             </div>
-            <div class="stdl-hiw-content">
-                <h4>Lock Content or File</h4>
-                <p>Protect downloads or premium content.</p>
-            </div>
-                </div>
-            </div>
                         <div class="stdl-hiw-card stdl-crd-4">
                 <div class="stdl-hiw-img-wrap">
                     <img loading="lazy" src="<?php echo STDL_URL . '/images/collect.png'; ?>" />
@@ -472,7 +473,7 @@
              </div>
             <div class="stdl-hiw-content">
                 <h4>Collect Leads & Grow</h4>
-                <p>Capture subscribers automatically.</p>
+                <p>Turn every download into a new subscriber and grow your audience effortlessly.</p>
             </div>
                 </div>
             </div>
