@@ -439,7 +439,7 @@
                 </div>
             <div class="stdl-hiw-des">
                 <div class="stdl-hiw-icon-icon">
-                 <img src="<?php echo STDL_URL . '/images/eye.svg'; ?>" />
+                 <img src="<?php echo STDL_URL . '/images/upload.svg'; ?>" />
              </div>
             <div class="stdl-hiw-content">
                 <h4>Upload Your Downloadable Resource</h4>
@@ -454,7 +454,7 @@
                 </div>
             <div class="stdl-hiw-des">
                 <div class="stdl-hiw-icon-icon">
-                 <img src="<?php echo STDL_URL . '/images/data.svg'; ?>" />
+                 <img src="<?php echo STDL_URL . '/images/integrate.svg'; ?>" />
              </div>
             <div class="stdl-hiw-content">
                 <h4>Connect Email Service</h4>
