@@ -373,7 +373,7 @@
                     <span class="stdl-faq-icon">+</span>
                 </button>
                 <div class="stdl-faq-answer">
-                    Yes. Subscribe To Download PRO is available for $25 with lifetime updates.
+                    Yes. Subscribe To Download PRO is available for $18 with lifetime updates.
                 </div>
             </div>
 
