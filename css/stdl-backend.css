@@ -1421,7 +1421,7 @@ p.stdl-feat-p {
 .stdl-hero-section {
     display: flex;
     justify-content: space-around;
-    background: linear-gradient(93.89deg, #FFFFFF 0.57%, #F4CCAE 112.39%);
+    background: linear-gradient(93.89deg, #FFFFFF 0.57%, rgba(176, 244, 174, 0.35) 112.39%);
     box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.25);
     border-radius: 16px;
     padding: 40px;
