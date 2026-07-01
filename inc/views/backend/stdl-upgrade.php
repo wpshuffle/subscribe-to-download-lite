@@ -435,7 +435,7 @@
                         <div class="stdl-hiw-card stdl-crd-2">
                 <div class="stdl-hiw-img-wrap">
                     <img loading="lazy" src="<?php echo STDL_URL . '/images/file.png'; ?>" />
-                    <div class="stdl-num">3</div>
+                    <div class="stdl-num">2</div>
                 </div>
             <div class="stdl-hiw-des">
                 <div class="stdl-hiw-icon-icon">
@@ -450,7 +450,7 @@
                                    <div class="stdl-hiw-card stdl-crd-3">
                 <div class="stdl-hiw-img-wrap">
                     <img loading="lazy" src="<?php echo STDL_URL . '/images/integrate.png'; ?>" />
-                    <div class="stdl-num">2</div>
+                    <div class="stdl-num">3</div>
                 </div>
             <div class="stdl-hiw-des">
                 <div class="stdl-hiw-icon-icon">
