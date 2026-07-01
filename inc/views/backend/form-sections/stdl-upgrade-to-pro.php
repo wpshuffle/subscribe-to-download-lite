@@ -352,7 +352,7 @@
                     <span class="stdl-faq-icon">+</span>
                 </button>
                 <div class="stdl-faq-answer">
-                    Yes. PRO lets you create unlimited forms with separate fields, restrictions, layouts, and submission
+                    Yes.STD PRO lets you create unlimited forms with separate fields, restrictions, layouts, and submission
                     settings for different use cases.
                 </div>
             </div>

@@ -1963,6 +1963,9 @@ text-align: center;
     color: #000000;
     margin: 0;
 }
+button.stdl-faq-question:focus-visible {
+    outline: none;
+}
 
 @media only screen and (max-width: 600px) {
   .stdl-social {
