@@ -57,13 +57,13 @@
         <h2 class="stdl-title">Check our Demos</h2>
         <div class="stdl-demo-card-wrap">
             <div class="stdl-demo-card">
-                <a href="https://demo.wpshuffle.com/subscribe-to-download/submit-post/">
+                <a href="https://demo.wpshuffle.com/subscribe-to-download/popup-demo/">
                     <div class="fpsm-demo-icon-wrap">
                         <img loading="lazy" src="<?php echo STDL_URL . '/images/setting.svg'; ?>" />
                     </div>
                     <div>
-                        <h5>Submit a Post</h5>
-                        <p>Frontend Demo</p>
+                        <h5>Popup Demo</h5>
+                        <p>Popup Form Demo</p>
                     </div>
 
                 </a>
@@ -81,7 +81,7 @@
                 </a>
             </div>
             <div class="stdl-demo-card crd-3">
-                <a href="https://demo.wpshuffle.com/subscribe-to-download/frontend-dashboard/?utm_source=cc&utm_campaign=demo_links&client_id=748956206.1722323371&session_id=1782116122">
+                <a href="https://demo.wpshuffle.com/subscribe-to-download/wp-login.php?redirect_to=https%3A%2F%2Fdemo.wpshuffle.com%2Fsubscribe-to-download%2Fwp-admin%2Fadmin.php%3Fpage%3Dsubscribe-to-download&reauth=1">
                     <div class="fpsm-demo-icon-wrap">
                         <img loading="lazy" src="<?php echo STDL_URL . '/images/frontend.svg'; ?>" />
                     </div>
@@ -93,7 +93,7 @@
                 </a>
             </div>
             <div class="stdl-demo-card crd-4">
-                <a href="https://demo.wpshuffle.com/subscribe-to-download/templates-demo/?utm_source=cc&utm_campaign=demo_links&client_id=748956206.1722323371&session_id=1782116122">
+                <a href="https://demo.wpshuffle.com/subscribe-to-download/all-templates-demo/">
                     <div class="fpsm-demo-icon-wrap">
                         <img loading="lazy" src="<?php echo STDL_URL . '/images/templates.svg'; ?>" />
                     </div>
